@@ -14,3 +14,6 @@ $ (venv) python
 
 
 + Run : python chat.py
+
++ pip install flask-cors 
+this package allow to run chatbot in seperate any frontend application. Chatboot application running behind the seen
