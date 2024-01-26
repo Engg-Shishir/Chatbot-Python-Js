@@ -3,3 +3,5 @@
 ````php
  (envname) PS C:\Users\shish\OneDrive\Desktop\yourDesktopFolderName> 
 ````
+
++ pip install Flask
