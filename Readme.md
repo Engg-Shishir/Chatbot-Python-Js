@@ -11,3 +11,6 @@
 $ (venv) python
 >>> import nltk
 >>> nltk.download('punkt')
+
+
++ Run : python chat.py
