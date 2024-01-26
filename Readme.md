@@ -5,3 +5,9 @@
 ````
 
 + pip install Flask
+
+
+
+$ (venv) python
+>>> import nltk
+>>> nltk.download('punkt')
