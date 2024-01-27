@@ -27,8 +27,14 @@ body {
 =============== */
 .chatbox {
   position: absolute;
-  bottom: 70px;
+  bottom: 45px;
   right: 30px;
+}
+
+.himage {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
 }
 
 /* CONTENT IS CLOSE */
@@ -37,15 +43,17 @@ body {
   flex-direction: column;
   background: #eee;
   width: 300px;
-  height: 350px;
+  height: 370px;
   z-index: -123456;
   opacity: 0;
   transition: all 0.5s ease-in-out;
+  border-bottom-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
 }
 
 /* CONTENT ISOPEN */
 .chatbox--active {
-  transform: translateY(-40px);
+  transform: translateY(-5px);
   z-index: 123456;
   opacity: 1;
 }
@@ -87,6 +95,32 @@ body {
   max-width: 60.6%;
   width: -moz-fit-content;
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.messages__item .profile {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.messages__item .iconBox {
+  width: 100%;
+  margin-top: 10px;
+  padding: 2px;
+}
+.messages__item .iconBox .iconlink {
+  display: flex;
+  margin-bottom: 5px;
+}
+.messages__item .iconBox .iconlink .icon {
+  height: 20px;
+  width: 20px;
+}
+.messages__item .iconBox .iconlink p {
+  margin-left: 5px;
 }
 
 .messages__item--operator {
@@ -105,7 +139,7 @@ body {
 
 .chatbox__support {
   background: #f9f9f9;
-  height: 503px;
+  height: 555px;
   width: 779px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 20px;
@@ -129,7 +163,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 15px 20px;
+  padding: 5px 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: var(--primaryBoxShadow);
@@ -140,7 +174,6 @@ body {
 }
 
 .chatbox__heading--header {
-  font-size: 1.2rem;
   color: white;
 }
 
@@ -183,7 +216,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 10px 20px;
   background: var(--secondaryGradient);
   box-shadow: var(--secondaryBoxShadow);
   border-bottom-right-radius: 10px;

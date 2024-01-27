@@ -68,29 +68,44 @@ class Chatbox {
           });
     }
 
-    isValidURL(url) {
-        const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
-        return urlRegex.test(url);
-    }
+
     updateChatText(chatbox) {
         var html = '';
-        let obj = new Chatbox();
         this.messages.slice().reverse().forEach(function(item, index) {
-            let messageContent = item.message;
-                let check = obj.isValidURL(messageContent);
-                console.log(item.message +" "+check);
-                // Determine whether it's a visitor or operator message
+            let con = item.message;
+            let about = con.about;
+            let Image = con.Image;
+            let linkedin = con.Linkedin;
+            let website = con.website;
+                
+               console.log(con);
+
                 if (item.name ==="pstu") {
-                    html += '<div class="messages__item messages__item--pstu';
-                    if (check) {
-                        html += ' messages__item--url"><a href="' + messageContent + '" target="_blank">' + messageContent + '</a>';
-                    } else {
-                        html += '">' + messageContent;
+                    html += '<div class="messages__item messages__item--pstu">';
+                    
+                    if (typeof Image !== 'undefined') {
+                        html += '<img class="profile" src="' + Image + '">';
                     }
+
+                    if (typeof about !== 'undefined') {
+                        html += '<div>'+con.about+'</div>';
+                    }else{
+                        html += '<div>'+con+'</div>';
+                    }
+
+                    html += '<div class="iconBox">';
+                    if (typeof linkedin !== 'undefined') {
+                        html +='<a class="iconlink" href="'+linkedin+'"><img class="icon" src="https://i.postimg.cc/nrJNZWkj/free-linkedin-logo-icon-2430-thumb.png"><p>'+con.Linkedin+'</p></a>';
+                    }
+                    if (typeof website !== 'undefined') {
+                        html +='<a class="iconlink" href="'+website+'"><img class="icon" src="https://i.postimg.cc/3N8vDgCS/world-cartoon-symbol-internet-blue-circle-line-area-logo-sphere-png-clipart.jpg"><p>'+con.website+'</p></a>';
+                    }
+                    html += '</div>';
+                  
                     html += '</div>';
                     // Left
                 }else{
-                    html += '<div class="messages__item messages__item--operator">' + messageContent + '</div>';
+                    html += '<div class="messages__item messages__item--operator">' + con + '</div>';
                 }
             
         });

@@ -1,6 +1,39 @@
 {
   "intents": [
     {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey dear",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "pstu",
+      "patterns": [
+        "PSTU",
+        "Patuakhali Science and Technology University",
+        "Patuakhali Science",
+        "Patuakhali University"
+      ],
+      "responses": [
+        {
+          "about": "PSTU stands for Patuakhali Science and Technology University, a public university in Bangladesh. It was established in 2000 and offers various courses and degrees in agriculture, science, and technology. It has two campuses: the main campus in Patuakhali and the outer campus in Babuganj. PSTU is the only science and technology university and the first public university in Barisal division",
+          "Image": "https://i.postimg.cc/G9wGmHhz/download.jpg",
+          "website": "https://pstu.ac.bd/"
+        }
+      ]
+    },
+    {
       "tag": "goodbye",
       "patterns": ["Goodbye", "See you later", "Farewell", "Bye"],
       "responses": [
@@ -13,7 +46,11 @@
     {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "Appreciate it", "Thanks a lot!"],
-      "responses": ["You're welcome!", "Happy to help!", "Anytime! If you have more questions, feel free to ask."]
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime! If you have more questions, feel free to ask."
+      ]
     },
     {
       "tag": "courses",
@@ -174,6 +211,7 @@
     {
       "tag": "cseclub",
       "patterns": [
+        "cseclub",
         "Tell me about the CSE club",
         "What is the Computer Science club?",
         "Can you provide information about the CSE club?"
@@ -198,19 +236,70 @@
     {
       "tag": "Mahbubur Rahman",
       "patterns": [
+        "Mahbubur Rahman",
         "Tell me about Mahbubur Rahman",
         "Who is Mahbubur Rahman at PSTU?",
         "Can you provide information about Mahbubur Rahman?"
       ],
       "responses": [
-        "Mahbubur Rahman is a talented and hardworking teacher at PSTU. He is dedicated to fostering academic excellence and supporting students in their learning journey."
+        {
+          "about": "Mahbubur Rahman is an assistant professor in the Department of Computer Science and Information Technology (CSIT) at Patuakhali Science and Technology University (PSTU) in Bangladesh. He has research interests in wireless sensor networks, cyber security, image processing, data science, and internet of things (IoT). He has published several papers in these fields and has received some awards for his work. He also teaches various courses related to computer science and engineering at PSTU. You can find more information about him on his :",
+          "Linkedin": "linkedin.com/in/mdmahbuburrahman1",
+          "Image": "https://i.postimg.cc/3NQwYyg9/1517616947301.jpg",
+          "website": "https://scholar.google.com/citations?user=34mP9OUAAAAJ"
+        }
       ]
     },
     {
-      "tag":"Mahbubur Rahman Linkedin",
-      "patterns": ["Do you have Mahbubur Rahman's LinkedIn?", "What is Mahbubur Rahman's LinkedIn profile?", "Can you share Mahbubur Rahman's LinkedIn?"],
-      "responses": ["https://bd.linkedin.com/in/mdmahbuburrahman1"]
+      "tag": "Dr. Samsuzzaman",
+      "patterns": [
+        "Professor Samsuzzama",
+        "Samsuzzama Sabuz",
+        "Dr. Samsuzzaman",
+        "Tell me about Dr. Samsuzzaman",
+        "Who is Dr. Samsuzzaman at PSTU?",
+        "Can you provide information about Dr. Samsuzzaman?"
+      ],
+      "responses": [
+        {
+          "about": "Md. Samsuzzaman was born in Jhenaidah, Bangladesh in 1982. He received the B.Sc. and M. Sc. Degree in Computer Science and Engineering from Islamic University Kushtia, Bangladesh in 2005 and 2007, respectively. Currently, he is pursuing his Ph.D. degree in telecommunication engineering in the Universiti Kebangsaan Malaysia (UKM). From February, 2008 to February, 2011, he worked as a lecturer at Patuakhali Science and Technology University (PSTU), Bangladesh. From February 2011 to till now; he is working as an Assistant Professor at the same university. He has authored or co-authored approximately 14 referred journals and conference papers. He is currently a Graduate Research Assistant at the Institute of Space Science (ANGKASA), UKM, and Malaysia. His research interests include the RF, electromagnetic field and propagation, Antenna Technology, Satellite communication, WSN and Semantic Web.Linkedin : <a href='linkedin.com/in/md-samsuzzaman-b17834129'>linkedin.com/in/md-samsuzzaman-b17834129</a>",
+          "Linkedin": "linkedin.com/in/md-samsuzzaman-b17834129",
+          "Image": "https://sobuzcse.files.wordpress.com/2014/03/a-6350.jpg",
+          "website": "https://sobuzcse.wordpress.com/"
+        }
+      ]
+    },
+    {
+      "tag": "Chinmay Bepery",
+      "patterns": [
+        "Professor Chinmay Bepery",
+        "Chinmay Bepery",
+        "Tell me about Chinmay Bepery",
+        "Who is Chinmay Bepery at PSTU?",
+        "Can you provide information about Chinmay Bepery?"
+      ],
+      "responses": [
+        {
+          "about": "Chinmay Bepery is a professor in the Department of Computer Science and Information Technology (CSIT) at Patuakhali Science and Technology University (PSTU) in Bangladesh. He teaches various courses related to computer science and engineering at PSTU. ",
+          "Linkedin": "",
+          "Image": "https://i1.rgstatic.net/ii/profile.image/753677170118658-1556702048472_Q128/Chinmay-Bepery.jpg",
+          "website": "https://www.researchgate.net/profile/Chinmay-Bepery"
+        }
+      ]
+    },
+    {
+      "tag": "email",
+      "patterns": [
+        "email",
+        "all teacher email",
+        "teacher email"
+      ],
+      "responses": [
+        {
+          "about": "<p>VC:vc.pstu@gmail.com</p><br> <p>Proctor:proctor.pstu@gmail.com</p><br> <p>Controller:controller.pstu@gmail.com</p><br>",
+          "website": "https://www.pstu.ac.bd"
+        }
+      ]
     }
-    
   ]
 }
