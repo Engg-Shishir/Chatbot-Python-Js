@@ -56,7 +56,7 @@ class Chatbox {
           })
           .then(r => r.json())
           .then(r => {
-            let msg2 = { name: "Sam", message: r.answer };
+            let msg2 = { name: "pstu", message: r.answer };
             this.messages.push(msg2);
             this.updateChatText(chatbox)
             textField.value = ''
@@ -68,18 +68,32 @@ class Chatbox {
           });
     }
 
+    isValidURL(url) {
+        const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+        return urlRegex.test(url);
+    }
     updateChatText(chatbox) {
         var html = '';
+        let obj = new Chatbox();
         this.messages.slice().reverse().forEach(function(item, index) {
-            if (item.name === "Sam")
-            {
-                html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
-            }
-            else
-            {
-                html += '<div class="messages__item messages__item--operator">' + item.message + '</div>'
-            }
-          });
+            let messageContent = item.message;
+                let check = obj.isValidURL(messageContent);
+                console.log(item.message +" "+check);
+                // Determine whether it's a visitor or operator message
+                if (item.name ==="pstu") {
+                    html += '<div class="messages__item messages__item--pstu';
+                    if (check) {
+                        html += ' messages__item--url"><a href="' + messageContent + '" target="_blank">' + messageContent + '</a>';
+                    } else {
+                        html += '">' + messageContent;
+                    }
+                    html += '</div>';
+                    // Left
+                }else{
+                    html += '<div class="messages__item messages__item--operator">' + messageContent + '</div>';
+                }
+            
+        });
 
         const chatmessage = chatbox.querySelector('.chatbox__messages');
         chatmessage.innerHTML = html;

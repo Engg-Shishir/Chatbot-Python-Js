@@ -1,0 +1,216 @@
+{
+  "intents": [
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "See you later", "Farewell", "Bye"],
+      "responses": [
+        "Goodbye! If you have more questions, feel free to ask.",
+        "See you later! Have a great day.",
+        "Farewell! If you need further assistance, don't hesitate to reach out.",
+        "Bye! Come back anytime if you need information."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Appreciate it", "Thanks a lot!"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime! If you have more questions, feel free to ask."]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "Tell me about available courses",
+        "What courses does the university offer?",
+        "Can you provide information about courses?"
+      ],
+      "responses": [
+        "We offer a wide range of courses in various disciplines. Is there a specific field you're interested in?",
+        "Our university provides diverse courses. Do you have a particular field in mind?"
+      ]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "How can I apply for admission?",
+        "Tell me about the admission process",
+        "What are the admission requirements?"
+      ],
+      "responses": [
+        "To apply for admission, you can visit our official website and follow the admission process outlined there.",
+        "Admission details, including requirements and the application process, can be found on our website."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "What are the tuition fees?",
+        "Tell me about the cost of education",
+        "Can you provide information about fees?"
+      ],
+      "responses": [
+        "For information about tuition fees, you can check our website's dedicated section on fees and financial matters.",
+        "Details regarding tuition fees and other costs are available on our official website."
+      ]
+    },
+    {
+      "tag": "campus",
+      "patterns": [
+        "Tell me about the campus facilities",
+        "What facilities does the campus have?",
+        "Can you describe the university campus?"
+      ],
+      "responses": [
+        "Our campus is equipped with state-of-the-art facilities, including libraries, labs, recreational areas, and more. Would you like specific details?",
+        "The university campus offers a range of facilities to enhance your learning experience. Do you have specific questions about any facility?"
+      ]
+    },
+    {
+      "tag": "events",
+      "patterns": [
+        "Are there any upcoming events?",
+        "Tell me about university events",
+        "What events does the university host?"
+      ],
+      "responses": [
+        "Certainly! We regularly organize various events, including academic conferences, cultural festivals, and sports competitions. Check our events calendar on the website for the latest updates.",
+        "Yes, we host a variety of events throughout the year. You can stay updated on upcoming events by visiting our official website."
+      ]
+    },
+    {
+      "tag": "student_life",
+      "patterns": [
+        "What's student life like?",
+        "Tell me about campus life",
+        "Can you describe the student experience?"
+      ],
+      "responses": [
+        "Student life is vibrant here! With numerous clubs, activities, and a supportive community, you'll have a memorable experience. Interested in any specific aspect?",
+        "Our university prides itself on a rich student life. From academic clubs to cultural events, there's always something happening. Any particular area you'd like more information on?"
+      ]
+    },
+    {
+      "tag": "housing",
+      "patterns": [
+        "Is there on-campus housing?",
+        "Tell me about accommodation options",
+        "What's available for student housing?"
+      ],
+      "responses": [
+        "Yes, we offer on-campus housing options. You can find detailed information about accommodations, including room types and amenities, on our official website.",
+        "For student housing, we have on-campus options tailored to different preferences. Feel free to explore our housing facilities on the website for more details."
+      ]
+    },
+    {
+      "tag": "career_services",
+      "patterns": [
+        "What career services are available?",
+        "Tell me about job placement",
+        "How does the university support career development?"
+      ],
+      "responses": [
+        "Our university provides comprehensive career services, including job placement assistance, internships, and career counseling. Interested in specific details?",
+        "We are dedicated to supporting your career development. From resume workshops to job fairs, our career services aim to enhance your professional journey. Any particular aspect you'd like to know more about?"
+      ]
+    },
+    {
+      "tag": "research",
+      "patterns": [
+        "Tell me about research opportunities",
+        "What research facilities does the university have?",
+        "Can you provide information about ongoing research?"
+      ],
+      "responses": [
+        "Our university is committed to fostering research. We have state-of-the-art facilities and ongoing research projects across various disciplines. Interested in a specific field?",
+        "Research opportunities abound at our university. Explore our research centers and ongoing projects on the official website for more information."
+      ]
+    },
+    {
+      "tag": "international_students",
+      "patterns": [
+        "How does the university support international students?",
+        "Tell me about services for international students",
+        "What resources are available for international students?"
+      ],
+      "responses": [
+        "We have dedicated services to support international students, including orientation programs, language assistance, and cultural integration activities. Is there anything specific you'd like to know?",
+        "International students are a valued part of our community. Explore the various resources and support services we offer to make your experience enriching and comfortable."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "Tell me about sports facilities",
+        "What sports are available at the university?",
+        "Can you provide information about the university's athletic programs?"
+      ],
+      "responses": [
+        "Our university offers excellent sports facilities, including gyms, fields, and courts. Interested in a specific sport or program?",
+        "Athletics are an integral part of our university. Explore our sports facilities and learn more about the exciting athletic programs we offer on our official website."
+      ]
+    },
+    {
+      "tag": "clubs",
+      "patterns": [
+        "Are there any student clubs?",
+        "Tell me about extracurricular activities",
+        "What clubs can I join at the university?"
+      ],
+      "responses": [
+        "We have a variety of student clubs catering to different interests. Whether it's academic, cultural, or recreational, there's something for everyone. Interested in a specific type of club?",
+        "Extracurricular activities play a significant role in our university. Explore the diverse range of student clubs and organizations on our official website to find the perfect fit for you."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about technology resources",
+        "What tech facilities are available?",
+        "Can you provide information about the university's technological infrastructure?"
+      ],
+      "responses": [
+        "Our university is equipped with cutting-edge technology resources, including computer labs, tech-enabled classrooms, and more. Interested in a specific aspect of our technological infrastructure?",
+        "Technology is an integral part of our academic environment. Explore the advanced technological resources and facilities available at our university on our official website."
+      ]
+    },
+    {
+      "tag": "cseclub",
+      "patterns": [
+        "Tell me about the CSE club",
+        "What is the Computer Science club?",
+        "Can you provide information about the CSE club?"
+      ],
+      "responses": [
+        "The Computer Science and Engineering (CSE) club is a vibrant community for students interested in technology and computing. It organizes coding competitions, workshops, and networking events. Would you like more details or have specific questions?",
+        "The CSE club is the hub for technology enthusiasts. We host coding challenges, tech talks, and collaborative projects. Feel free to explore more about our CSE club activities on our official website or ask for specific information."
+      ]
+    },
+    {
+      "tag": "cse",
+      "patterns": [
+        "Tell me about Computer Science courses",
+        "What Computer Science courses are available?",
+        "Can you provide information about the Computer Science department?"
+      ],
+      "responses": [
+        "The Computer Science department offers a variety of courses covering programming, algorithms, artificial intelligence, and more. Is there a specific area of interest within Computer Science that you'd like to know more about?",
+        "Our Computer Science department provides a comprehensive curriculum, including courses in software development, data science, and computer networks. If you have specific questions or need details, feel free to ask."
+      ]
+    },
+    {
+      "tag": "Mahbubur Rahman",
+      "patterns": [
+        "Tell me about Mahbubur Rahman",
+        "Who is Mahbubur Rahman at PSTU?",
+        "Can you provide information about Mahbubur Rahman?"
+      ],
+      "responses": [
+        "Mahbubur Rahman is a talented and hardworking teacher at PSTU. He is dedicated to fostering academic excellence and supporting students in their learning journey."
+      ]
+    },
+    {
+      "tag":"Mahbubur Rahman Linkedin",
+      "patterns": ["Do you have Mahbubur Rahman's LinkedIn?", "What is Mahbubur Rahman's LinkedIn profile?", "Can you share Mahbubur Rahman's LinkedIn?"],
+      "responses": ["https://bd.linkedin.com/in/mdmahbuburrahman1"]
+    }
+    
+  ]
+}
